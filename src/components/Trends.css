@@ -1,0 +1,52 @@
+.section {
+  width: 100%;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #1976d2;
+}
+
+.chart-card {
+ background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  padding: 16px;
+  margin-bottom: 8px;
+  min-height: 260px;   /* ✅ same height for both */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chart-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-color {
+  width: 16px;
+  height: 4px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.legend-label {
+  font-size: 0.95rem;
+  color: #555;
+}

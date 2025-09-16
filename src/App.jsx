@@ -5,9 +5,11 @@ import './styles.css';
 
 function App() {
   return (
-    <div>
+    <div style={{ display: 'flex', minHeight: '100vh' }}>
       <Sidebar />
-      <Dashboard />
+      <div style={{ flex: 1 }}>
+        <Dashboard />
+      </div>
     </div>
   );
 }
