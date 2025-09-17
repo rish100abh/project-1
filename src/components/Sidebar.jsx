@@ -3,23 +3,32 @@ import { FaHome, FaChartLine, FaAd, FaUser, FaCog } from "react-icons/fa";
 import "./Sidebar.css";
 
 const Sidebar = () => {
-  const icons = [
-    { icon: <FaHome />, color: "#ff6f61" },
-    { icon: <FaChartLine />, color: "#42a5f5" },
-    { icon: <FaAd />, color: "#ffa726" },
-    { icon: <FaUser />, color: "#66bb6a" },
-    { icon: <FaCog />, color: "#ab47bc" },
-  ];
+  const icons = [<FaHome />, <FaChartLine />, <FaAd />, <FaUser />, <FaCog />];
 
   return (
-    <div className="sidebar">
-      {icons.map((item, i) => (
+    <div
+      className="sidebar"
+      style={{
+        backgroundColor: "orange",   // Sidebar background
+        minHeight: "100vh",
+        padding: "16px 0",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      {icons.map((icon, i) => (
         <div
           key={i}
           className="sidebar-icon"
-          style={{ color: item.color }}
+          style={{
+            color: "white",         // White icons
+            fontSize: "1.8rem",
+            margin: "20px 0",
+            cursor: "pointer",
+          }}
         >
-          {item.icon}
+          {icon}
         </div>
       ))}
     </div>
